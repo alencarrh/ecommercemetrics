@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
 
 @RestController
-@RequestMapping("/products")
-@Tag(name = "Internal Product", description = "Internal endpoints for Product API")
+@RequestMapping("/internal/products")
+@Tag(name = "Internal Product", description = "Internal endpoints for Product")
 class InternalProductController(private val searchProductService: SearchProductService) {
 
   @PostMapping("/{id}")

@@ -5,7 +5,5 @@ import org.springframework.stereotype.Service
 @Service
 class SearchProductService {
 
-  fun findProductById(id: String): String {
-    return "Product, $id!"
-  }
+  fun findProductById(id: String): String = "Product, $id!"
 }
